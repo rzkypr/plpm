@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laporan</title>
+  <title>Surat Pengajuan</title>
   <style>
     img{
       height: 100px;;
@@ -25,7 +25,7 @@
     <hr class="solid">
 
     <div>
-      <h6>Laporan Pengajuan</h6>
+      <h6>Surat Pengajuan</h6>
       <h6>{{ $pengaduan->created_at->format('l, d F Y') }}</h6>
     </div>
     <hr class="solid">

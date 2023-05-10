@@ -56,7 +56,7 @@ class AdminController extends Controller
 
         $pdf = PDF::loadview('pages.admin.pengaduan', [
             'pengaduan' => $pengaduan
-        ]);
+        ])->setPaper('a4','landscape');
         return $pdf->download('laporan.pdf');
     }
 
@@ -66,6 +66,6 @@ class AdminController extends Controller
         $pengaduan = Pengaduan::find($id);
 
         $pdf = PDF::loadview('pages.admin.pengaduan.cetak', compact('pengaduan'))->setPaper('a4');
-        return $pdf->download('laporan-pengaduan.pdf');
+        return $pdf->download('laporan-pengajuan.pdf');
     }
 }

@@ -120,6 +120,10 @@ class PetugasController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $petugas = User::find($id);
+        $petugas->delete();
+
+        Alert::success('Berhasil', 'Petugas telah di hapus');
+        return redirect('admin/petugas');
     }
 }

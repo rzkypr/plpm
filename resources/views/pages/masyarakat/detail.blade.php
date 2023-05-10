@@ -7,7 +7,7 @@ Data Pengajuan
 <main class="h-full pb-16 overflow-y-auto">
   <div class="container grid px-6 mx-auto">
     <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-      Data Pengajuan
+      DATA PENGAJUAN
     </h2>
 
     <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
@@ -36,7 +36,8 @@ Data Pengajuan
               <th class="px-4 py-3">Email</th>
               <th class="px-4 py-3">Tanggal Mulai</th>
               <th class="px-4 py-3">Tanggal Selesai</th>  --}}
-              {{-- on process plptd --}}
+
+
 
 
 
@@ -96,7 +97,8 @@ Data Pengajuan
               <td class="px-4 py-3 text-sm">
                 {{ $item->selesai }}
               </td>  --}}
-              // on process plptd
+
+
 
 
 

@@ -29,6 +29,7 @@ class CreatePengaduansTable extends Migration
             $table->text('email');
             $table->text('mulai');
             $table->text('selesai');
+            $table->text('file');
             $table->string('status')->default('Belum di Proses');
             $table->softDeletes();
 

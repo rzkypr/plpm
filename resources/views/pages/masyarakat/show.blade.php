@@ -8,7 +8,7 @@ Detail Pengajuan
 <main class="h-full pb-16 overflow-y-auto">
   <div class="container grid px-6 mx-auto">
     <h2 class="my-6 text-2xl font-semibold text-center text-gray-700 dark:text-gray-200">
-      Detail Pengajuan
+      DETAIL PENGAJUAN
     </h2>
 
     <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
@@ -20,7 +20,7 @@ Detail Pengajuan
           {{--  <h2>Nama : {{ $ite->name }}</h2>
           <h2 class="mt-4">NIM : {{ $ite->user_nim }}</h2>  --}}
           <h2 class="mt-4">Dinas : {{ $ite->dinas }}</h2>
-          <h2 class="mt-4">NISN/NIM/Nomor Induk : {{ $ite->nim }}</h2>
+          <h2 class="mt-4">NISN/NIM : {{ $ite->nim }}</h2>
           <h2 class="mt-4">Nama : {{ $ite->nama }}</h2>
           <h2 class="mt-4">Asal Sekolah/Kampus : {{ $ite->kampus }}</h2>
           <h2 class="mt-4">Jurusan : {{ $ite->jurusan }}</h2>
@@ -29,7 +29,8 @@ Detail Pengajuan
           <h2 class="mt-4">Email : {{ $ite->email }}</h2>
           <h2 class="mt-4">Tanggal Mulai : {{ $ite->mulai }}</h2>
           <h2 class="mt-4 mb-2">Tanggal selesai : {{ $ite->selesai }}</h2>
-          {{--  on process plptd  --}}
+
+
 
 
 
@@ -82,6 +83,14 @@ Detail Pengajuan
             </p>
           </div>
         </div>
+
+        <div class="flex justify-center my-4">
+          <a href="{{ url('user/pengaduan/cetak', $item->id)}}"
+              class="px-5 py-3 font-medium leading-5 text-white transition-colors duration-150 bg-purple-600  border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+              Export ke PDF
+          </a>
+        </div>
+
       </div>
     </div>
 

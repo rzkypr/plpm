@@ -10,7 +10,7 @@ Formulir Pengajuan
   @endforeach --}}
   <div class="container px-6 mx-auto grid">
     <h2 class="my-6 text-2xl font-semibold text-center text-gray-700 dark:text-gray-200">
-      Silahkan Isi Formulir Pengajuan
+      SILAHKAN ISI FORMULIR PENGAJUAN
     </h2>
 
     @if ($errors->any())
@@ -57,10 +57,10 @@ Formulir Pengajuan
         </label>
 
         <label class="block mt-6 text-sm">
-            <span class="text-gray-700 dark:text-gray-400">NISN/NIM/Nomor Induk</span>
+            <span class="text-gray-700 dark:text-gray-400">NISN/NIM</span>
             <input
               class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-              rows="8" type="text" placeholder="NISN/NIM/Nomor Induk" value="{{ old('nim')}}" required
+              rows="8" type="text" placeholder="NISN/NIM" value="{{ old('nim')}}" required
               name="nim"></input>
         </label>
 
@@ -88,19 +88,22 @@ Formulir Pengajuan
               name="jurusan"></input>
         </label>
 
-        <label class="block mt-6 text-sm">
+        <label class="block mt-6 mb-4 text-sm">
             <span class="text-gray-700 dark:text-gray-400">Jenjang</span>
-            <input
-              class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-              rows="8" type="text" placeholder="Jenjang" value="{{ old('jenjang')}}" required
-              name="jenjang"></input>
+            <select
+              class="block w-full text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+              name="jenjang" required>
+              <option value="SMK">SMK</option>
+              <option value="D3">D3</option>
+              <option value="S1">S1</option>
+            </select>
         </label>
 
         <label class="block mt-6 text-sm">
             <span class="text-gray-700 dark:text-gray-400">Nomor Whatsapp</span>
             <input
               class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-              rows="8" type="text" placeholder="Nomor Whatsapp" value="{{ old('whatsapp')}}" required
+              rows="8" type="number" placeholder="Nomor Whatsapp" value="{{ old('whatsapp')}}" required
               name="whatsapp"></input>
         </label>
 
@@ -108,7 +111,7 @@ Formulir Pengajuan
             <span class="text-gray-700 dark:text-gray-400">Email</span>
             <input
               class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-              rows="8" type="text" placeholder="Email" value="{{ old('email')}}" required
+              rows="8" type="email" placeholder="Email" value="{{ old('email')}}" required
               name="email"></input>
         </label>
 
@@ -116,7 +119,7 @@ Formulir Pengajuan
             <span class="text-gray-700 dark:text-gray-400">Tanggal Mulai</span>
             <input
               class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-              rows="8" type="text" placeholder="Tanggal Mulai" value="{{ old('mulai')}}" required
+              rows="8" type="date" placeholder="Tanggal Mulai" value="{{ old('mulai')}}" required
               name="mulai"></input>
         </label>
 
@@ -124,19 +127,17 @@ Formulir Pengajuan
             <span class="text-gray-700 dark:text-gray-400">Tanggal Selesai</span>
             <input
               class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-textarea focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-              rows="8" type="text" placeholder="Tanggal Selesai" value="{{ old('selesai')}}" required
+              rows="8" type="date" placeholder="Tanggal Selesai" value="{{ old('selesai')}}" required
               name="selesai"></input>
         </label>
-        {{--  on process plptd  --}}
 
-
-
-        {{--  <label for="image" class="block mt-4 text-sm">
+        <label for="image" class="block mt-4 text-sm">
           <span class="text-gray-700 dark:text-gray-400">File</span>
           <input
             class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-            type="file" value="{{ old('image')}}" name="image" required/>
-        </label>  --}}
+            type="file" value="{{ old('file')}}" name="file" required/>
+        </label>
+
         <button type="submit"
           class="mt-6 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
           Kirim

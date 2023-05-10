@@ -16,13 +16,13 @@
       <a class="inline-flex items-center text-sm mr-5 font-semibold transition-colors duration-150 "
         href="{{ url('user')}}">
 
-        <span class="ml-4">Formulir Pengajuan</span>
+        <span class="ml-4">FORMULIR PENGAJUAN</span>
       </a>
 
       <a class="inline-flex items-center text-sm mr-5 font-semibold transition-colors duration-150 "
         href="{{ url('user/pengaduan')}} ">
 
-        <span class="ml-4">Data Pengajuan</span>
+        <span class="ml-4">DATA PENGAJUAN</span>
       </a>
       {{-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
         <button @click="open = !open"
@@ -102,7 +102,7 @@
                       d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1">
                     </path>
                   </svg>
-                  <span>Log out</span>
+                  <span>KELUAR</span>
                 </a>
               </form>
             </li>

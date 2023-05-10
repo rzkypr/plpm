@@ -8,7 +8,7 @@ Tanggapan
 <main class="h-full pb-16 overflow-y-auto">
   <div class="container px-6 mx-auto grid">
     <h2 class="my-6 text-2xl text-center font-semibold text-gray-700 dark:text-gray-200">
-      Berikan Tanggapan
+      BERIKAN TANGGAPAN
     </h2>
     <form action="{{ route('tanggapan.store')}} " method="POST" enctype="multipart/form-data">
       @csrf
@@ -28,9 +28,9 @@ Tanggapan
           <select
             class="block w-full text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
             name="status" required>
-            <option value="Belum di Proses">Belum di Proses</option>
+            <option value="Ditolak">Ditolak</option>
             <option value="Sedang di Proses">Sedang di Proses</option>
-            <option value="Selesai">Selesai</option>
+            <option value="Diterima">Diterima</option>
 
           </select>
         </label>

@@ -24,10 +24,12 @@ class PengaduanRequest extends FormRequest
     public function rules()
     {
         return [
+            'nim' => 'required|numeric',
+            'jurusan' = 'required|alpha',
             'name' => 'required|max:255',
             'user_id' => 'required|exists:users,id',
             'description' => 'required',
-            'image' => 'required',
+            'file' => 'required',
             'status' => 'required'
         ];
     }

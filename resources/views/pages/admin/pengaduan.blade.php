@@ -19,7 +19,7 @@
 <body>
   <div class="container mt-5">
     <div class="title text-center mb-5">
-      <h2>Laporan Portal Layanan Pengajuan PL/PKL/Magang Terintegrasi Diskominfo</h2>
+      <h2>Laporan Portal Layanan Pengajuan PL/PKL/Magang Terintegrasi Diskominfo Kabupaten Bandung</h2>
       <h5><a href="http://rcreatived.rf.gd/" target="_blank">Oleh Mahasiswa STMIK Dharma Negara Bandung</a></h5>
     </div>
     <table class="table table-bordered">

@@ -56,7 +56,7 @@ class TanggapanController extends Controller
         $data['pengaduan_id'] = $request->pengaduan_id;
         $data['petugas_id']=$petugas_id;
 
-        Alert::success('Berhasil', 'Pengaduan berhasil ditanggapi');
+        Alert::success('Berhasil', 'Pengajuan berhasil ditanggapi');
         Tanggapan::create($data);
         return redirect('admin/pengaduans');
     }

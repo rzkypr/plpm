@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-    Permohonan
+    Pengajuan
 @endsection
 
 @section('content')
@@ -10,7 +10,7 @@
             <h2
               class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
             >
-              Permohonan
+              Pengajuan
             </h2>
              <!-- Cards -->
             <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
@@ -133,11 +133,11 @@
                       class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
                     >
                       <th class="px-4 py-3">ID</th>
-                      <th class="px-4 py-3">Kode Pengaduan</th>
+                      <th class="px-4 py-3">Kode Pengajuan</th>
                       <th class="px-4 py-3">Date</th>
                       <th class="px-4 py-3">Nama</th>
                       <th class="px-4 py-3">Laporan</th>
-                      <th class="px-4 py-3">Foto</th>
+                      <th class="px-4 py-3">File</th>
                       <th class="px-4 py-3">Status</th>
                     </tr>
                   </thead>

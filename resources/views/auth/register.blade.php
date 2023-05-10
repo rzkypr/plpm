@@ -2,7 +2,7 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <img class="w-20 h-20 " src="{{ asset('img/logo.svg')}} " alt="Logo">
+                <img class="w-161 h-53 " src="{{ asset('img/plptd-logo.png')}} " alt="Logo">
             </a>
         </x-slot>
 
@@ -14,7 +14,7 @@
 
             <!-- NIM -->
             <div>
-                <x-label for="nim" :value="__('ID User')" />
+                <x-label for="nim" :value="__('NISN/NIM')" />
 
                 <x-input id="nim" class="block mt-1 w-full" type="text" name="nim" :value="old('nim')" required autofocus />
             </div>

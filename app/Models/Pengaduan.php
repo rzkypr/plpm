@@ -12,8 +12,7 @@ class Pengaduan extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'dinas', 'nama', 'nim', 'kampus', 'jurusan', 'jenjang', 'whatsapp', 'email', 'mulai', 'selesai', 'status', 'user_nim', 'user_id' // 'image',
-        // on process plptd
+        'name', 'dinas', 'nama', 'nim', 'kampus', 'jurusan', 'jenjang', 'whatsapp', 'email', 'mulai', 'selesai', 'status', 'user_nim', 'user_id', 'file'
     ];
 
     protected $hidden = [

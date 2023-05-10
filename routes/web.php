@@ -43,9 +43,13 @@ Route::prefix('admin')
 Route::prefix('user')
     ->middleware(['auth', 'MasyarakatMiddleware'])
     ->group(function() {
-				Route::get('/', 'MasyarakatController@index')->name('masyarakat-dashboard');
-                Route::resource('pengaduan', 'MasyarakatController');
-                Route::get('pengaduan', 'MasyarakatController@lihat');
+		Route::get('/', 'MasyarakatController@index')->name('masyarakat-dashboard');
+        Route::resource('pengaduan', 'MasyarakatController');
+        Route::get('pengaduan', 'MasyarakatController@lihat');
+
+        Route::get('laporan', 'MasyarakatController@laporan');
+        Route::get('laporan/cetak', 'MasyarakatController@cetak');
+        Route::get('pengaduan/cetak/{id}', 'MasyarakatController@pdf');
 });
 
 

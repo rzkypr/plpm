@@ -43,10 +43,10 @@
             <nav id="nav-menu-container">
               <ul class="nav-menu">
                 <li class="menu-active"><a href="{{ url('login') }}">Beranda</a></li>
-                <li><a href="{{ url('login') }}">Tentang</a></li>
+                <!-- <li><a href="{{ url('login') }}">Tentang</a></li>
                 <li><a href="{{ url('login') }}">Kategori</a></li>
                 <li><a href="{{ url('login') }}">Blog</a></li>
-                <li><a href="{{ url('login') }}">FAQ</a></li>
+                <li><a href="{{ url('login') }}">FAQ</a></li> -->
                 <li class="/"><a href="">Kontak</a>
                   <ul>
                     <li><a href="http://rizkypurnamaramadhan.rf.gd">Rizky Purnama Ramadhan</a></li>
@@ -71,7 +71,7 @@
             <h1 class="text-white">
               <span> PLPTD</span> PORTAL LAYANAN PENGAJUAN PL/PKL/MAGANG TERINTEGRASI DISKOMINFO KABUPATEN BANDUNG 				
             </h1>	
-            {{-- <form action="/" class="serach-form-area">
+            <!-- <form action="/" class="serach-form-area">
               <div class="row justify-content-center form-wrap">
                 <div class="col-lg-4 form-cols">
                   <input type="text" class="form-control" name="search" placeholder="what are you looging for?">
@@ -104,7 +104,7 @@
                     </button>
                 </div>								
               </div>
-            </form>	 --}}
+            </form> -->
             <br>
             <p class="text-white"> <span>Ajukan</span> pengajuan anda di sini, kami akan memprosesnya
               dengan cepat.</p>
@@ -156,7 +156,7 @@
     <!-- End features Area -->
     
     <!-- Start popular-post Area -->
-    {{-- <section class="popular-post-area pt-100">
+    <section class="popular-post-area pt-100">
       <div class="container">
         <div class="row align-items-center">
           <div class="active-popular-post-carusel">
@@ -166,8 +166,8 @@
                 <a class="btns text-uppercase" href="{{ url('login') }}">Lihat</a>
               </div>
               <div class="details">
-                <a href="{{ url('login') }}"><h4>DISKOMINFO</h4></a>
-                <h6>Bandung</h6>
+                <a href="{{ url('login') }}"><h4>Dinas Komunikasi, Informatika, Dan Statistika</h4></a>
+                <h6>Diskominfo</h6>
                 <p>
                   Menguasai laravel 8 dan tailwind css
                 </p>
@@ -179,8 +179,8 @@
                 <a class="btns text-uppercase" href="{{ url('login') }}">Lihat</a>
               </div>
               <div class="details">
-                <a href="{{ url('login') }}"><h4>DISKOMINFO</h4></a>
-                <h6>Bandung</h6>
+                <a href="{{ url('login') }}"><h4>Dinas Komunikasi, Informatika, Dan Statistika</h4></a>
+                <h6>Diskominfo</h6>
                 <p>
                   Menguasai laravel 8 dan tailwind css
                 </p>
@@ -192,8 +192,8 @@
                 <a class="btns text-uppercase" href="{{ url('login') }}">Lihat</a>
               </div>
               <div class="details">
-                <a href="{{ url('login') }}"><h4>DISKOMINFO</h4></a>
-                <h6>Bandung</h6>
+                <a href="{{ url('login') }}"><h4>Dinas Komunikasi, Informatika, Dan Statistika</h4></a>
+                <h6>Diskominfo</h6>
                 <p>
                   Menguasai laravel 8 dan tailwind css
                 </p>
@@ -205,8 +205,8 @@
                 <a class="btns text-uppercase" href="{{ url('login') }}">Lihat</a>
               </div>
               <div class="details">
-                <a href="{{ url('login') }}"><h4>DISKOMINFO</h4></a>
-                <h6>Bandung</h6>
+                <a href="{{ url('login') }}"><h4>Dinas Komunikasi, Informatika, Dan Statistika</h4></a>
+                <h6>Diskominfo</h6>
                 <p>
                   Menguasai laravel 8 dan tailwind css
                 </p>
@@ -218,8 +218,8 @@
                 <a class="btns text-uppercase" href="{{ url('login') }}">Lihat</a>
               </div>
               <div class="details">
-                <a href="{{ url('login') }}"><h4>DISKOMINFO</h4></a>
-                <h6>Bandung</h6>
+                <a href="{{ url('login') }}"><h4>Dinas Komunikasi, Informatika, Dan Statistika</h4></a>
+                <h6>Diskominfo</h6>
                 <p>
                   Menguasai laravel 8 dan tailwind css
                 </p>
@@ -231,8 +231,8 @@
                 <a class="btns text-uppercase" href="{{ url('login') }}">Lihat</a>
               </div>
               <div class="details">
-                <a href="{{ url('login') }}"><h4>DISKOMINFO</h4></a>
-                <h6>Bandung</h6>
+                <a href="{{ url('login') }}"><h4>Dinas Komunikasi, Informatika, Dan Statistika</h4></a>
+                <h6>Diskominfo</h6>
                 <p>
                   Menguasai laravel 8 dan tailwind css
                 </p>
@@ -241,7 +241,7 @@
           </div>
         </div>
       </div>	
-    </section> --}}
+    </section>
     <!-- End popular-post Area -->
     
     <!-- Start feature-cat Area -->
@@ -301,7 +301,7 @@
               <a href="{{ url('login') }}">
                 <img src="img/o6.png" alt="">
               </a>
-              <p>Pemerintah</p>
+              <p>Olahraga</p>
             </div>			
           </div>																											
         </div>
@@ -374,8 +374,8 @@
                   3. Aktif berbahasa inggris
                 </p>
                 <h5>Sifat Pekerjaan: Penuh waktu</h5>
-                <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
-                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p>
+                <!-- <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
+                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p> -->
               </div>
             </div>
             <div class="single-post d-flex flex-row">
@@ -396,8 +396,8 @@
               <div class="details">
                 <div class="title d-flex flex-row justify-content-between">
                   <div class="titles">
-                    <a href="{{ url('login') }}"><h4>FULLSTACK WEB DEVELOPER</h4></a>
-                    <h6>Dinas Komunikasi Informatika dan Statistika</h6>					
+                    <a href="{{ url('login') }}"><h4>AKUNTANSI</h4></a>
+                    <h6>Dinas Kependudukan Dan Pencatatan Sipil</h6>					
                   </div>
                   <ul class="btns">
                     <li><a href="{{ url('login') }}"><span class="lnr lnr-heart"></span></a></li>
@@ -405,13 +405,13 @@
                   </ul>
                 </div>
                 <p>
-                  1. Menguasai framework laravel dan tailwindcss
+                  1. Menguasai microsoft office family
                   2. Bisa bekerja tim 
                   3. Aktif berbahasa inggris
                 </p>
                 <h5>Sifat Pekerjaan: Penuh waktu</h5>
-                <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
-                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p>
+                <!-- <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
+                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p> -->
               </div>
             </div>
             <div class="single-post d-flex flex-row">
@@ -432,8 +432,8 @@
               <div class="details">
                 <div class="title d-flex flex-row justify-content-between">
                   <div class="titles">
-                    <a href="{{ url('login') }}"><h4>FULLSTACK WEB DEVELOPER</h4></a>
-                    <h6>Dinas Komunikasi Informatika dan Statistika</h6>					
+                    <a href="{{ url('login') }}"><h4>APOTEKER</h4></a>
+                    <h6>Dinas Kesehatan</h6>					
                   </div>
                   <ul class="btns">
                     <li><a href="{{ url('login') }}"><span class="lnr lnr-heart"></span></a></li>
@@ -441,13 +441,13 @@
                   </ul>
                 </div>
                 <p>
-                  1. Menguasai framework laravel dan tailwindcss
+                  1. Menguasai farmasi dan obat-obatan
                   2. Bisa bekerja tim 
                   3. Aktif berbahasa inggris
                 </p>
                 <h5>Sifat Pekerjaan: Penuh waktu</h5>
-                <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
-                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p>
+                <!-- <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
+                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p> -->
               </div>
             </div>		
             <div class="single-post d-flex flex-row">
@@ -468,8 +468,8 @@
               <div class="details">
                 <div class="title d-flex flex-row justify-content-between">
                   <div class="titles">
-                    <a href="{{ url('login') }}"><h4>FULLSTACK WEB DEVELOPER</h4></a>
-                    <h6>Dinas Komunikasi Informatika dan Statistika</h6>					
+                    <a href="{{ url('login') }}"><h4>PUSTAKAWAN</h4></a>
+                    <h6>Dinas Arsip Dan Perpustakaan</h6>					
                   </div>
                   <ul class="btns">
                     <li><a href="{{ url('login') }}"><span class="lnr lnr-heart"></span></a></li>
@@ -477,13 +477,13 @@
                   </ul>
                 </div>
                 <p>
-                  1. Menguasai framework laravel dan tailwindcss
+                  1. Menguasai literasi buku
                   2. Bisa bekerja tim 
                   3. Aktif berbahasa inggris
                 </p>
                 <h5>Sifat Pekerjaan: Penuh waktu</h5>
-                <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
-                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p>
+                <!-- <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
+                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p> -->
               </div>
             </div>
             <div class="single-post d-flex flex-row">
@@ -504,8 +504,8 @@
               <div class="details">
                 <div class="title d-flex flex-row justify-content-between">
                   <div class="titles">
-                    <a href="{{ url('login') }}"><h4>FULLSTACK WEB DEVELOPER</h4></a>
-                    <h6>Dinas Komunikasi Informatika dan Statistika</h6>					
+                    <a href="{{ url('login') }}"><h4>AGROTEKNOLOGI</h4></a>
+                    <h6>Dinas Lingkungan Hidup</h6>					
                   </div>
                   <ul class="btns">
                     <li><a href="{{ url('login') }}"><span class="lnr lnr-heart"></span></a></li>
@@ -513,13 +513,13 @@
                   </ul>
                 </div>
                 <p>
-                  1. Menguasai framework laravel dan tailwindcss
+                  1. Menguasai teknik dasar pertanian
                   2. Bisa bekerja tim 
                   3. Aktif berbahasa inggris
                 </p>
                 <h5>Sifat Pekerjaan: Penuh waktu</h5>
-                <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
-                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p>
+                <!-- <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
+                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p> -->
               </div>
             </div>
             <div class="single-post d-flex flex-row">
@@ -540,8 +540,8 @@
               <div class="details">
                 <div class="title d-flex flex-row justify-content-between">
                   <div class="titles">
-                    <a href="{{ url('login') }}"><h4>FULLSTACK WEB DEVELOPER</h4></a>
-                    <h6>Dinas Komunikasi Informatika dan Statistika</h6>					
+                    <a href="{{ url('login') }}"><h4>ATLET SEPAKBOLA</h4></a>
+                    <h6>Dinas Pemuda Dan Olahraga</h6>					
                   </div>
                   <ul class="btns">
                     <li><a href="{{ url('login') }}"><span class="lnr lnr-heart"></span></a></li>
@@ -549,13 +549,13 @@
                   </ul>
                 </div>
                 <p>
-                  1. Menguasai framework laravel dan tailwindcss
+                  1. Menguasai olahraga sepak bola
                   2. Bisa bekerja tim 
                   3. Aktif berbahasa inggris
                 </p>
                 <h5>Sifat Pekerjaan: Penuh waktu</h5>
-                <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
-                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p>
+                <!-- <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
+                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p> -->
               </div>
             </div>															
             <div class="single-post d-flex flex-row">
@@ -576,8 +576,8 @@
               <div class="details">
                 <div class="title d-flex flex-row justify-content-between">
                   <div class="titles">
-                    <a href="{{ url('login') }}"><h4>FULLSTACK WEB DEVELOPER</h4></a>
-                    <h6>Dinas Komunikasi Informatika dan Statistika</h6>					
+                    <a href="{{ url('login') }}"><h4>PEMANDU WISATA</h4></a>
+                    <h6>Dinas Pariwisata Dan Kebudayaan</h6>					
                   </div>
                   <ul class="btns">
                     <li><a href="{{ url('login') }}"><span class="lnr lnr-heart"></span></a></li>
@@ -585,13 +585,13 @@
                   </ul>
                 </div>
                 <p>
-                  1. Menguasai framework laravel dan tailwindcss
+                  1. Menguasai public speaking yang baik
                   2. Bisa bekerja tim 
                   3. Aktif berbahasa inggris
                 </p>
                 <h5>Sifat Pekerjaan: Penuh waktu</h5>
-                <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
-                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p>
+                <!-- <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
+                <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p> -->
               </div>
             </div>	
             
@@ -599,7 +599,7 @@
 
           </div>
           <div class="col-lg-4 sidebar">
-            {{-- <div class="single-slidebar">
+            <!-- <div class="single-slidebar">
               <h4>Jobs by Location</h4>
               <ul class="cat-list">
                 <li><a class="justify-content-between d-flex" href="{{ url('login') }}"><p>New York</p><span>37</span></a></li>
@@ -610,7 +610,7 @@
                 <li><a class="justify-content-between d-flex" href="{{ url('login') }}"><p>Rocky Beach</p><span>27</span></a></li>
                 <li><a class="justify-content-between d-flex" href="{{ url('login') }}"><p>Chicago</p><span>17</span></a></li>
               </ul>
-            </div> --}}
+            </div> -->
 
             <div class="single-slidebar">
               <h4>Rating Teratas Postingan Pekerjaan</h4>
@@ -625,42 +625,42 @@
                     3. Aktif berbahasa inggris
                   </p>
                   <h5>Sifat Pekerjaan: Penuh waktu</h5>
-                  <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
-                  <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p>
+                  <!-- <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
+                  <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p> -->
                   <a href="{{ url('login') }}" class="btns text-uppercase">Ajukan</a>
                 </div>
                 <div class="single-rated">
                   <img class="img-fluid" src="img/r1.jpg" alt="">
-                  <a href="{{ url('login') }}"><h4>FULLSTACK WEB DEVELOPER</h4></a>
-                  <h6>Dinas Komunikasi Informatika dan Statistika</h6>
+                  <a href="{{ url('login') }}"><h4>AKUNTANSI</h4></a>
+                  <h6>Dinas Kependudukan Dan Pencatatan Sipil</h6>
                   <p>
-                    1. Menguasai frame work laravel dan tailwindcss
+                    1. Menguasai microsoft office family
                     2. Bisa berkerja tim 
                     3. Aktif berbahasa inggris
                   </p>
                   <h5>Sifat Pekerjaan: Penuh waktu</h5>
-                  <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
-                  <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p>
+                  <!-- <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
+                  <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p> -->
                   <a href="{{ url('login') }}" class="btns text-uppercase">Ajukan</a>
                 </div>
                 <div class="single-rated">
                   <img class="img-fluid" src="img/r1.jpg" alt="">
-                  <a href="{{ url('login') }}"><h4>FULLSTACK WEB DEVELOPER</h4></a>
-                  <h6>Dinas Komunikasi Informatika dan Statistika</h6>
+                  <a href="{{ url('login') }}"><h4>ATLET SEPAK BOLA</h4></a>
+                  <h6>Dinas Pemuda Dan Olahraga</h6>
                   <p>
-                    1. Menguasai frame work laravel dan tailwindcss
+                    1. Menguasai olahraga sepak bola
                     2. Bisa berkerja tim 
                     3. Aktif berbahasa inggris
                   </p>
                   <h5>Sifat Pekerjaan: Penuh waktu</h5>
-                  <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
-                  <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p>
+                  <!-- <p class="address"><span class="lnr lnr-map"></span> 56/8, Kabupaten Bandung</p>
+                  <p class="address"><span class="lnr lnr-database"></span> 15k - 25k</p> -->
                   <a href="{{ url('login') }}" class="btns text-uppercase">Ajukan</a>
                 </div>																		
               </div>
             </div>							
 
-            {{-- <div class="single-slidebar">
+            <!-- <div class="single-slidebar">
               <h4>Jobs by Category</h4>
               <ul class="cat-list">
                 <li><a class="justify-content-between d-flex" href="{{ url('login') }}"><p>Teknologi</p><span>37</span></a></li>
@@ -671,9 +671,9 @@
                 <li><a class="justify-content-between d-flex" href="{{ url('login') }}"><p>Developer</p><span>27</span></a></li>
                 <li><a class="justify-content-between d-flex" href="{{ url('login') }}"><p>Akuntansi</p><span>17</span></a></li>
               </ul>
-            </div> --}}
+            </div> -->
 
-            {{-- <div class="single-slidebar">
+            <!-- <div class="single-slidebar">
               <h4>Carrer Advice Blog</h4>
               <div class="blog-list">
                 <div class="single-blog " style="background:#000 url(img/blog1.jpg);">
@@ -722,7 +722,7 @@
                   </div>
                 </div>																		
               </div>
-            </div>							 --}}
+            </div> -->
 
           </div>
         </div>
@@ -731,7 +731,7 @@
     <!-- End post Area -->
 
     <!-- Start download Area -->
-    {{-- <section class="download-area section-gap" id="app">
+    <!-- <section class="download-area section-gap" id="app">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 download-left">
@@ -770,7 +770,7 @@
           </div>
         </div>
       </div>	
-    </section> --}}
+    </section> -->
     <!-- End download Area -->
   
     <!-- start footer Area -->		
@@ -781,11 +781,11 @@
             <div class="single-footer-widget">
               <h6>Pekerjaan Teratas</h6>
               <ul class="footer-nav">
-                <li><a href="{{ url('login') }}">Mobile Developer</a></li>
                 <li><a href="{{ url('login') }}">Web Developer</a></li>
-                <li><a href="{{ url('login') }}">Desain Grafis</a></li>
-                <li><a href="{{ url('login') }}">Marketing</a></li>
-                <li><a href="{{ url('login') }}">Akuntan</a></li>
+                <li><a href="{{ url('login') }}">Akuntansi</a></li>
+                <li><a href="{{ url('login') }}">Apoteker</a></li>
+                <li><a href="{{ url('login') }}">Agroteknologi</a></li>
+                <li><a href="{{ url('login') }}">Atlet</a></li>
               </ul>
             </div>
           </div>
@@ -813,7 +813,7 @@
               </div>		
             </div>
           </div>
-          {{-- <div class="col-lg-3  col-md-12">
+          <!-- <div class="col-lg-3  col-md-12">
             <div class="single-footer-widget mail-chimp">
               <h6 class="mb-20">Umpan Instagram</h6>
               <ul class="instafeed d-flex flex-wrap">
@@ -827,7 +827,7 @@
                 <li><img src="img/i8.jpg" alt=""></li>
               </ul>
             </div>
-          </div>						 --}}
+          </div> -->
         </div>
 
         <div class="row footer-bottom d-flex justify-content-between">

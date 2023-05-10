@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Session;
 use RealRashid\SweetAlert\Facades\Alert;
 use File;
+use PDF;
 
 class MasyarakatController extends Controller
 {
@@ -56,11 +57,7 @@ class MasyarakatController extends Controller
             'email' => 'required',
             'mulai' => 'required',
             'selesai' => 'required',
-            // on process plptd
-
-
-
-            // 'image' => 'required',
+            'file' => 'required',
         ]);
 
         $nim = Auth::user()->nim;
@@ -71,7 +68,7 @@ class MasyarakatController extends Controller
         $data['user_nim'] = $nim;
         $data['user_id'] = $id;
         $data['name'] = $name;
-        // $data['image'] = $request->file('image')->store('assets/laporan', 'public');
+        $data['file'] = $request->file('file')->store('assets/laporan', 'public');
 
 
 
@@ -144,5 +141,39 @@ class MasyarakatController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+
+
+
+    public function laporan()
+    {
+
+        $pengaduan = Pengaduan::orderBy('created_at', 'DESC')->get();
+
+        return view('pages.masyarakat.laporan', [
+            'pengaduan' => $pengaduan
+        ]);
+    }
+
+    public function cetak()
+    {
+
+        $pengaduan = Pengaduan::orderBy('created_at', 'DESC')->get();
+
+        $pdf = PDF::loadview('pages.masyarakat.pengaduan', [
+            'pengaduan' => $pengaduan
+        ]);
+        return $pdf->download('surat.pdf');
+    }
+
+    public function pdf($id)
+    {
+
+        $pengaduan = Pengaduan::find($id);
+
+        $pdf = PDF::loadview('pages.masyarakat.pengaduan.cetak', compact('pengaduan'))->setPaper('a4');
+        return $pdf->download('surat-pengajuan.pdf');
     }
 }
