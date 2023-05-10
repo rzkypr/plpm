@@ -19,8 +19,8 @@
 <body>
   <div class="container">
     <div class="title text-center mb-5">
-      <h2>PLPTD | Portal Layanan Pengajuan PL/PKL/Magang Terintegrasi Diskominfo Kabupaten Bandung</h2>
-      <h5><a href="http://rcreatived.rf.gd/" target="_blank">Oleh Mahasiswa STMIK Dharma Negara Bandung</a></h5>
+      <h2>PLPM | Portal Layanan Pengajuan PL/PKL/Magang Diskominfo Kabupaten Bandung</h2>
+      <h5><a href="http://rcreatived.rf.gd/" target="_blank">Oleh Rizky Purnama Ramadhan</a></h5>
     </div>
     <hr class="solid">
 

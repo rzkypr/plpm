@@ -4,7 +4,7 @@
     <img src="{{ asset('img/logo.svg')}}" alt=""
       class="inline-flex ml-3 items-center transform transition hover:scale-125 duration-300 ease-in-out" />
     <a class="ml-3 text-lg font-bold text-gray-800 dark:text-gray-200" href="/">
-      PLPTD
+      PLPM
     </a>
     <ul class="mt-6">
       <li class="relative px-6 py-3">
@@ -70,6 +70,23 @@
         </a>
       </li>
     </ul>
+
+    <ul>
+      <li class="relative px-6 py-3">
+        <span
+          class="{{ (request()->is('admin/petugas')) ? 'absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg' : '' }} "
+          aria-hidden="true"></span>
+        <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+          href="{{ route('petugas.index')}}">
+          <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+          </svg>
+          <span class="ml-4">LOWONGAN MAGANG</span>
+        </a>
+      </li>
+    </ul>
+    
     @endif
     <ul>
       <li class="relative px-6 py-3">

@@ -1,7 +1,5 @@
 # Portal Layanan Pengajuan Magang Terintegrasi Studi Kasus Diskominfo Kabupaten Bandung
 
-Portal layanan pengajuan magang menggunakan framework laravel 8 dan tailwind css
-
 (Cloned from [rzkypr/plpm](https://github.com/rzkypr/plpm.git) with some modifications based on my requirement, please refer there for official update and the newest change)
 
 ### Prasyarat
@@ -26,7 +24,11 @@ Jika Anda menggunakan XAMPP, untuk PHP dan MySQL sudah menjadi 1 (bundle) didala
 
 ### Preview Gambar
 
-
+-
+-
+-
+-
+-
 
 ### Langkah-langkah instalasi
 
@@ -69,6 +71,7 @@ Password    : admin
 ### Dibuat dengan
 
 -   [Laravel](https://laravel.com) - Web Framework
+-	[Tailwind CSS](https://tailwindcss.com/) - Library
 
 ### Kontribusi
 

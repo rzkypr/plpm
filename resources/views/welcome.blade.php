@@ -15,7 +15,7 @@
       <!-- meta character set -->
       <meta charset="UTF-8">
       <!-- Site Title -->
-      <title>PLPTD | Portal Layanan Pengajuan PL/PKL/Magang Terintegrasi Diskominfo Kabupaten Bandung</title>
+      <title>PLPM | Portal Layanan Pengajuan PL/PKL/Magang Diskominfo Kabupaten Bandung</title>
 
       <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
       <!--
@@ -38,7 +38,7 @@
         <div class="container">
           <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
-              <a href="/"><img src="img/plptd-logo.png" alt="" title="" /></a>
+              <a href="/"><img src="img/plpm-logo.png" alt="" title="" /></a>
             </div>
             <nav id="nav-menu-container">
               <ul class="nav-menu">
@@ -50,7 +50,6 @@
                 <li class="/"><a href="">Kontak</a>
                   <ul>
                     <li><a href="http://rizkypurnamaramadhan.rf.gd">Rizky Purnama Ramadhan</a></li>
-                    <li><a href="http://rizkypurnamaramadhan.rf.gd">Muhamad Hamdani</a></li>
                   </ul>
                 </li>
                 <li><a class="ticker-btn" href="{{ url('register')}}">Daftar</a></li>
@@ -69,7 +68,7 @@
         <div class="row fullscreen d-flex align-items-center justify-content-center">
           <div class="banner-content col-lg-12">
             <h1 class="text-white">
-              <span> PLPTD</span> PORTAL LAYANAN PENGAJUAN PL/PKL/MAGANG TERINTEGRASI DISKOMINFO KABUPATEN BANDUNG 				
+              <span> PLPM</span> PORTAL LAYANAN PENGAJUAN PL/PKL/MAGANG DISKOMINFO KABUPATEN BANDUNG 				
             </h1>	
             <!-- <form action="/" class="serach-form-area">
               <div class="row justify-content-center form-wrap">
@@ -146,7 +145,7 @@
             <div class="single-feature">
               <h4>4. Selesai</h4>
               <p>
-                Pengajuan anda  telah selesai ditindak.
+                Pengajuan anda telah selesai ditindak.
               </p>
             </div>
           </div>																		
@@ -251,7 +250,7 @@
           <div class="menu-content pb-60 col-lg-10">
             <div class="title text-center">
               <h1 class="mb-10">Kategori Pekerjaan Unggulan</h1>
-              <p>Portal Layanan Pengajuan PL/PKL/Magang Terintegrasi Diskominfo Kabupaten Bandung.</p>
+              <p>Portal Layanan Pengajuan PL/PKL/Magang Diskominfo Kabupaten Bandung.</p>
             </div>
           </div>
         </div>						
@@ -321,7 +320,7 @@
           <div class="menu-content col-lg-9">
             <div class="title text-center">
               <h1 class="mb-10 text-white">Bergabunglah dengan kami hari ini tanpa ragu-ragu</h1>
-              <p class="text-white">Portal Layanan Pengajuan PL/PKL/Magang Terintegrasi Diskominfo Kabupaten Bandung</p>
+              <p class="text-white">Portal Layanan Pengajuan PL/PKL/Magang Diskominfo Kabupaten Bandung</p>
               <a class="primary-btn" href="{{ url('register') }}">Daftar</a>
               <a class="primary-btn" href="{{ url('login') }}">Gabung</a>
             </div>
@@ -832,7 +831,7 @@
 
         <div class="row footer-bottom d-flex justify-content-between">
           <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
-              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | PLPTD by <a href="http://rcreatived.rf.gd" target="_blank">Mahasiswa STMIK Dharma Negara Bandung</a>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | PLPM by <a href="http://rizkypurnamaramadhan.rf.gd" target="_blank">Rizky Purnama Ramadhan</a>
           </p>
           <div class="col-lg-4 col-sm-12 footer-social">
             <a href="https://wa.me/628882158789"><i class="fa fa-whatsapp"></i></a>
