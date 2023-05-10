@@ -1,4 +1,4 @@
-# Portal Layanan Pengajuan Magang Terintegrasi Studi Kasus Diskominfo Kabupaten Bandung
+# Portal Layanan Pengajuan Magang Studi Kasus Diskominfo Kabupaten Bandung
 
 (Cloned from [rzkypr/plpm](https://github.com/rzkypr/plpm.git) with some modifications based on my requirement, please refer there for official update and the newest change)
 
