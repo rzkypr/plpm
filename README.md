@@ -1,4 +1,4 @@
-# Portal Layanan Pengajuan Magang Studi Kasus Diskominfo Kabupaten Bandung
+# Portal Layanan Pengajuan Magang Diskominfo Kabupaten Bandung
 
 (Cloned from [rzkypr/plpm](https://github.com/rzkypr/plpm.git) with some modifications based on my requirement, please refer there for official update and the newest change)
 
@@ -16,7 +16,7 @@ Jika Anda menggunakan XAMPP, untuk PHP dan MySQL sudah menjadi 1 (bundle) didala
 ### Fitur
 
 -   CRUD Lowongan Magang
--   CRUD Petugas
+-   CRUD Petugas/Admin
 -   Verifikasi Pengajuan Magang
 -   Login/Register
 -   Form Pengajuan Magang
@@ -24,6 +24,7 @@ Jika Anda menggunakan XAMPP, untuk PHP dan MySQL sudah menjadi 1 (bundle) didala
 
 ### Preview Gambar
 
+-
 -
 -
 -
@@ -71,7 +72,7 @@ Password    : admin
 ### Dibuat dengan
 
 -   [Laravel](https://laravel.com) - Web Framework
--	[Tailwind CSS](https://tailwindcss.com/) - Library
+-   [Tailwind CSS](https://tailwindcss.com/) - Library
 
 ### Kontribusi
 
