@@ -1,23 +1,23 @@
 @extends('layouts.admin')
 
 @section('title')
-PLPM | Data User
+PLPM | Data Lowongan Magang
 @endsection
 
 @section('content')
 <main class="h-full pb-16 overflow-y-auto">
   <div class="container grid px-6 mx-auto">
     <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-      DATA USER
+      DATA LOWONGAN MAGANG
     </h2>
 
     <div class="my-4 mb-6">
-      <a href="{{ url('register')}}"
+      <a href="{{ route('lowongan.create')}} "
         class="px-5 py-3  font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-        Tambah Data User
+        Tambah Lowongan Magang
       </a>
     </div>
-
+    
     <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
       <div class="w-full overflow-x-auto">
         @if ($errors->any())
@@ -33,32 +33,36 @@ PLPM | Data User
           <thead>
             <tr
               class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
-              <th class="px-4 py-3">ID User</th>
+              <th class="px-4 py-3">ID Lowongan</th>
               <th class="px-4 py-3">Nama</th>
-              <th class="px-4 py-3">Nomor Telepon</th>
-              <th class="px-4 py-3">Email</th>
+              <th class="px-4 py-3">Dinas</th>
+              <th class="px-4 py-3">Waktu</th>
+              <th class="px-4 py-3">Keterangan</th>
               <th class="px-4 py-3">Aksi</th>
             </tr>
           </thead>
           <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
-            @forelse ($data as $masyarakat)
+            @forelse ($data as $lowongan)
             <tr class="text-gray-700 dark:text-gray-400">
               <td class="px-4 py-3 text-sm">
-                {{ $masyarakat->nim }}
+                {{ $lowongan->id_lowongan }}
               </td>
               <td class="px-4 py-3 text-sm">
-                {{ $masyarakat->name }}
+                {{ $lowongan->nama }}
               </td>
               <td class="px-4 py-3 text-sm">
-                {{ $masyarakat->phone }}
+                {{ $lowongan->dinas }}
               </td>
               <td class="px-4 py-3 text-sm">
-                {{ $masyarakat->email }}
+                {{ $lowongan->waktu }}
+              </td>
+              <td class="px-4 py-3 text-sm">
+                {{ $lowongan->keterangan }}
               </td>
               <td class="px-4 py-3">
                 <div class="flex items-center space-x-4 text-sm">
                   <a href="#"
-                    onclick="return confirm('Apakah anda ingin mengedit user?')"
+                    onclick="return confirm('Apakah anda ingin mengedit lowongan?')"
                     class="flex items-center justify-between  text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
                     aria-label="Update">
 
@@ -69,11 +73,11 @@ PLPM | Data User
                         d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                     </svg>
                   </a>
-                  <form action="" method="POST">
+                  <form action="{{ route('lowongan.destroy', $lowongan->id)}}" method="POST">
                     @csrf
                     @method('delete')
                     <button
-                      onclick="return confirm('Apakah anda ingin menghapus user?')"
+                      onclick="return confirm('Apakah anda ingin menghapus lowongan magang?')"
                       class="flex items-center justify-between  text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
                       aria-label="Delete">
                       <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
@@ -96,7 +100,6 @@ PLPM | Data User
           </tbody>
         </table>
       </div>
-
     </div>
 
   </div>
