@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-    Pengajuan
+PLPM | Pengajuan
 @endsection
 
 @section('content')

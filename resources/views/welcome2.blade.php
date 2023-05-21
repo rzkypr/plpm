@@ -1,564 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx" class="no-js">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PLPTD | Portal Layanan Pengajuan PL/PKL/Magang Terintegrasi Diskominfo</title>
+  <head>
+      <!-- Mobile Specific Meta -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Favicon-->
+      <link rel="shortcut icon" href="img/fav.png">
+      <!-- Author Meta -->
+      <meta name="author" content="rcreatived">
+      <!-- Meta Description -->
+      <meta name="description" content="">
+      <!-- Meta Keyword -->
+      <meta name="keywords" content="">
+      <!-- meta character set -->
+      <meta charset="UTF-8">
+      <!-- Site Title -->
+      <title>PLPM | Portal Layanan Pengajuan PL/PKL/Magang Diskominfo Kabupaten Bandung</title>
 
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <link rel="icon" href="{{ asset('img/favicon.svg')}}">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-</head>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+      <!--
+      CSS
+      ============================================= -->
+      <link rel="stylesheet" href="css/linearicons.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
+      <link rel="stylesheet" href="css/nice-select.css">					
+      <link rel="stylesheet" href="css/animate.min.css">
+      <link rel="stylesheet" href="css/owl.carousel.css">
+      <link rel="stylesheet" href="css/main.css">
+  </head>
 
-<body class="leading-normal tracking-normal" style="font-family: 'Montserrat', sans-serif">
+  <body>
+    
+    <!-- start header Area -->
+      <header id="header" id="home">
+        <div class="container">
+          <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+              <a href="/"><img src="img/plpm-logo.png" alt="" title="" /></a>
+            </div>
+            <nav id="nav-menu-container">
+              <ul class="nav-menu">
+                <li class="menu-active"><a href="{{ url('login') }}">Beranda</a></li>
+                <li class="/"><a href="">Kontak</a>
+                  <ul>
+                    <li><a href="http://rizkypurnamaramadhan.rf.gd">Rizky Purnama Ramadhan</a></li>
+                  </ul>
+                </li>
+                <li><a class="ticker-btn" href="{{ url('register')}}">Daftar</a></li>
+                <li><a class="ticker-btn" href="{{ url('login')}}">Gabung</a></li>				          				          
+              </ul>
+            </nav><!-- #nav-menu-container -->		    		
+          </div>
+        </div>
+      </header><!-- #header -->
+    <!-- end header Area -->
 
-  <nav class="flex items-center justify-between flex-wrap bg-blue-200 p-7 px-20">
-    <div class="flex items-center flex-shrink-0 text-black mr-6">
-      <img src="{{ asset('img/logo.svg')}}" alt=""
-        class="transform transition hover:scale-125 duration-300 ease-in-out" />
-      <span class="font-bold tracking-wider text-xl">
-        &nbsp <b>PLPTD</b></span>
-    </div>
-    <div class="block lg:hidden">
-      <button
-        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
-    </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-center">
-      <div class="text-md lg:flex-grow">
-        <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4">
-            <b>Beranda</b>
-        </a>
-        <a href="#how" class="block mt-4 lg:inline-block lg:mt-0 text-black mr-4">
-            <b>Tata Cara</b>
-        </a>
+    <!-- start banner Area -->
+    <section class="banner-area relative" id="home">	
+      <div class="overlay overlay-bg"></div>
+      <div class="container">
+        <div class="row fullscreen d-flex align-items-center justify-content-center">
+          <div class="banner-content col-lg-12">
+            <h1 class="text-white">
+              <span> PLPM</span> PORTAL LAYANAN PENGAJUAN PL/PKL/MAGANG DISKOMINFO KABUPATEN BANDUNG	
+            </h1>	
+            <br>
+            <p class="text-white"> <span>Ajukan</span> pengajuan anda di sini, PLPM akan memprosesnya
+              dengan cepat.</p>
+          </div>											
+        </div>
       </div>
-      <div>
-        <button
-          class="text-black font-normal rounded-md py-3 border-black px-4 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          <a href="{{ url('login')}}"><b>Masuk</b></a>
-        </button>
-        <button
-          class="text-blue-500 font-medium rounded-md py-3 px-4 border-2 border-black focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          <a href="{{ url('register')}}"><b>Daftar</b></a>
-        </button>
-      </div>
-    </div>
-  </nav>
+    </section>
+    <!-- End banner Area -->	
 
-  <!-- Header -->
-
-  <!--Hero-->
-  <div class="pt-24 px-16 bg-blue-200">
-    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      <!--Left Col-->
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left text-gray-800">
-        <h1 class="my-4 text-4xl font-bold leading-tight">
-            Portal Layanan Pengajuan PL/PKL/Magang Terintegrasi Diskominfo
-        </h1>
-        <p class="leading-normal text-1xl mb-8">
-          Ajukan pengajuan PL/PKL/Magang anda di sini, kami akan memprosesnya
-          dengan cepat.
-        </p>
-        <button
-          class="mx-auto lg:mx-0 bg-blue-500 text-white font-bold rounded-md my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          <a href="{{ url('login')}}">Ajukan!</a>
-        </button>
-      </div>
-      <!--Right Col-->
-      <div class="w-full md:w-3/5 text-center">
-        <img class="object-fill mx-36 transform transition hover:scale-110 duration-300 ease-in-out"
-          src="{{ asset('img/plptd.svg')}}" />
-      </div>
-    </div>
-  </div>
-
-  <!-- How -->
-  <div id="how" class="container my-20 mx-auto px-4 md:px-12">
-    <div class="flex flex-wrap -mx-1 lg:-mx-4">
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Tulis"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="{{ asset('img/tulis.svg')}}" />
-          <header class="leading-tight p-2 md:p-4 text-center ">
-            <h1 class="text-lg font-bold">1. Pengajuan</h1>
-            <p class="text-grey-darker text-sm py-4">
-              Ajukan pengajuan anda dengan jelas.
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg text-gray-800">
-          <img alt="Proses"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="{{ asset('img/processing.svg')}}" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">2. Proses Verifikasi</h1>
-            <p class="text-grey-darker text-sm py-4">
-              Tunggu sampai pengajuan anda di verifikasi.
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Ditindak"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="{{ asset('img/act.svg')}}" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">3. Tindak Lanjut</h1>
-            <p class="text-grey-darker text-sm py-4">
-              Pengajuan anda sedang dalam tindak lanjut.
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="{{ asset('img/verification.svg')}}" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">4. Selesai</h1>
-            <p class="text-grey-darker text-sm py-4">
-              Pengajuan anda  telah selesai ditindak.
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      
-      <!-- Divider -->
-      <div class="pt-24 px-16 bg-blue-200">
-        <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-          <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left text-gray-800">
-            <h1 class="my-4 text-4xl font-bold leading-tight">
-                Portal Layanan Pengajuan PL/PKL/Magang Terintegrasi Diskominfo
-            </h1>
+    <!-- Start features Area -->
+    <section class="features-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="single-feature">
+              <h4>1. Daftar/Gabung</h4>
+              <p>
+                Daftar/Gabung akun anda sekarang.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-feature">
+              <h4>2. Isi Formulir</h4>
+              <p>
+                Isi data formulir pengajuan dengan lengkap.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-feature">
+              <h4>3. Verifikasi</h4>
+              <p>
+                Tunggu proses verifikasi pengajuan anda.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="single-feature">
+              <h4>4. Selesai</h4>
+              <p>
+                Pengajuan selesai diterima/ditolak, dan cetak surat.
+              </p>
+            </div>
+          </div>																		
+        </div>
+      </div>	
+    </section>
+    <!-- End features Area -->
+    
+    <!-- Start popular-post Area -->
+    <section class="popular-post-area pt-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="active-popular-post-carusel">
+            <div class="single-popular-post d-flex flex-row">
+              <div class="thumb">
+                <img class="img-fluid" src="img/p1.png" alt="">
+                <a class="btns text-uppercase" href="{{ url('login') }}">Ajukan</a>
+              </div>
+              <div class="details">
+                <a href="{{ url('login') }}"><h4>Web Developer</h4></a>
+                <h6>Diskominfo</h6>
+                <p>
+                  3 Bulan
+                </p>
+                <p>
+                  Aktif
+                </p>
+              </div>
+            </div>	
+            <div class="single-popular-post d-flex flex-row">
+              <div class="thumb">
+                <img src="img/p2.png" alt="">
+                <a class="btns text-uppercase" href="{{ url('login') }}">Ajukan</a>
+              </div>
+              <div class="details">
+                <a href="{{ url('login') }}"><h4>Akuntansi</h4></a>
+                <h6>Disdik</h6>
+                <p>
+                  6 Bulan
+                </p>
+                <p>
+                  Aktif
+                </p>
+              </div>
+            </div>
+            <div class="single-popular-post d-flex flex-row">
+              <div class="thumb">
+                <img src="img/p1.png" alt="">
+                <a class="btns text-uppercase" href="{{ url('login') }}">Ajukan</a>
+              </div>
+              <div class="details">
+                <a href="{{ url('login') }}"><h4>Apoteker</h4></a>
+                <h6>Dinkes</h6>
+                <p>
+                  2 Bulan
+                </p>
+                <p>
+                  Aktif
+                </p>
+              </div>
+            </div>	
+            <div class="single-popular-post d-flex flex-row">
+              <div class="thumb">
+                <img src="img/p2.png" alt="">
+                <a class="btns text-uppercase" href="{{ url('login') }}">Ajukan</a>
+              </div>
+              <div class="details">
+                <a href="{{ url('login') }}"><h4>IT Support</h4></a>
+                <h6>Disdukcapil</h6>
+                <p>
+                  3 Bulan
+                </p>
+                <p>
+                  Aktif
+                </p>
+              </div>
+            </div>	
+            <div class="single-popular-post d-flex flex-row">
+              <div class="thumb">
+                <img src="img/p1.png" alt="">
+                <a class="btns text-uppercase" href="{{ url('login') }}">Ajukan</a>
+              </div>
+              <div class="details">
+                <a href="{{ url('login') }}"><h4>Staff Admin</h4></a>
+                <h6>Dispora</h6>
+                <p>
+                  4 Bulan
+                </p>
+                <p>
+                  Aktif
+                </p>
+              </div>
+            </div>																																								
+          </div>
+        </div>
+      </div>	
+    </section>
+    <!-- End popular-post Area -->
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    <!-- start footer Area -->		
+    <footer class="footer-area section-gap">
+      <div class="container">
+        <div class="row footer-bottom d-flex justify-content-between">
+          <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | PLPM by <a href="http://rizkypurnamaramadhan.rf.gd" target="_blank">Rizky Purnama Ramadhan</a>
+          </p>
+          <div class="col-lg-4 col-sm-12 footer-social">
+            <a href="https://wa.me/628882158789"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://facebook.com/rzkyprnmrmdhn"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com/_rzkypr"><i class="fa fa-instagram"></i></a>
           </div>
         </div>
       </div>
-      <!-- END Divider -->
+    </footer>
+    <!-- End footer Area -->		
 
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>			
+    <script type="text/javascript" src=" "></script>
+    <script src="js/easing.min.js"></script>			
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>	
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>	
+    <script src="js/owl.carousel.min.js"></script>			
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>			
+    <script src="js/parallax.min.js"></script>		
+    <script src="js/mail-script.js"></script>	
+    <script src="js/main.js"></script>	
 
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-      <!-- Column -->
-      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-        <!-- Article -->
-        <article class="overflow-hidden rounded-lg shadow-lg  text-gray-800">
-          <img alt="Selesai"
-            class="block h-auto w-full lg:w-28 mx-auto my-10 transform transition hover:scale-125 duration-300 ease-in-out"
-            src="https://www.bandungkab.go.id/public/frontend/intro/images/logo.png" />
-          <header class="leading-tight p-2 md:p-4 text-center">
-            <h1 class="text-lg font-bold">DINAS KOMUNIKASI INFORMATIKA DAN STATISTIKA</h1>
-            <p class="text-grey-darker text-sm py-4">
-              MENGUASAI LARAVEL 8 DAN TAILWINDCSS
-            </p>
-          </header>
-          <button
-            class="text-black font-normal rounded-md py-3 border-black px-4 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            <a href="{{ url('login')}}"><b>Masuk</b></a>
-          </button>
-        </article>
-        <!-- END Article -->
-      </div>
-      <!-- END Column -->
-
-
-    </div>
-  </div>
-  <!-- Footer -->
-  <footer class="text-center font-medium bg-blue-200 py-5">
-    <b>© {{ now()->year }} PLPTD | Diskominfo By</b>
-    <a href="http://rcreatived.rf.gd/" class="text-blue-500" target="_blank"><b>Mahasiswa STMIK Dharma Negara Bandung</b></a>
-  </footer>
-  @include('sweetalert::alert')
-</body>
+  </body>
 
 </html>

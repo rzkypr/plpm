@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PLPM | Portal Layanan Pengajuan PL/PKL/Magang Diskominfo Kabupaten Bandung</title>
+  <title>PLPM | Portal Layanan Pengajuan Magang Diskominfo Kabupaten Bandung</title>
 
   <style>
     .thead{
@@ -19,8 +19,8 @@
 <body>
   <div class="container mt-5">
     <div class="title text-center mb-5">
-      <h2>Laporan Portal Layanan Pengajuan PL/PKL/Magang Diskominfo Kabupaten Bandung</h2>
-      <h5><a href="http://rcreatived.rf.gd/" target="_blank">Oleh Rizky Purnama Ramadhan</a></h5>
+      <h2>Laporan Portal Layanan Pengajuan Magang Diskominfo Kabupaten Bandung</h2>
+      <h5><a href="http://rizkypurnamaramadhan.rf.gd/" target="_blank">Oleh Rizky Purnama Ramadhan</a></h5>
     </div>
     <table class="table table-bordered">
       <thead class="thead">

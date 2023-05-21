@@ -4,7 +4,7 @@
     <img src="{{ asset('img/logo.svg')}}" alt=""
       class="inline-flex ml-3 items-center transform transition hover:scale-125 duration-300 ease-in-out" />
     <a class="ml-3 text-lg font-bold text-gray-800 dark:text-gray-200" href="/">
-      PLPM
+      P L P M
     </a>
     <ul class="mt-6">
       <li class="relative px-6 py-3">
@@ -17,7 +17,7 @@
             <path
               d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
           </svg>
-          <span class="ml-4">DASHBOARD</span>
+          <span class="ml-4">BERANDA</span>
         </a>
       </li>
     </ul>
@@ -33,7 +33,7 @@
               d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
               clip-rule="evenodd" />
           </svg>
-          <span class="ml-4">PENGAJUAN</span>
+          <span class="ml-4">PENGAJUAN MAGANG</span>
         </a>
       </li>
     </ul>
@@ -100,7 +100,7 @@
               d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 10-2 0v3a1 1 0 102 0v-3zm2-3a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zm4-1a1 1 0 10-2 0v7a1 1 0 102 0V8z"
               clip-rule="evenodd" />
           </svg>
-          <span class="ml-4">LAPORAN</span>
+          <span class="ml-4">LAPORAN MAGANG</span>
         </a>
       </li>
     </ul>

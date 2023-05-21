@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-Data Petugas
+PLPM | Data Petugas
 @endsection
 
 @section('content')

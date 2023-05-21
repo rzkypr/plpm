@@ -1,7 +1,7 @@
 @extends('layouts.masyarakat')
 
 @section('title')
-Formulir Pengajuan
+PLPM | Formulir Pengajuan Magang
 @endsection
 @section('content')
 <main class="h-full pb-16 overflow-y-auto">
@@ -10,7 +10,10 @@ Formulir Pengajuan
   @endforeach --}}
   <div class="container px-6 mx-auto grid">
     <h2 class="my-6 text-2xl font-semibold text-center text-gray-700 dark:text-gray-200">
-      SILAHKAN ISI FORMULIR PENGAJUAN
+      PORTAL LAYANAN PENGAJUAN MAGANG DISKOMINFO KABUPATEN BANDUNG
+    </h2>
+    <h2 class="my-6 text-2xl font-semibold text-center text-gray-700 dark:text-gray-200">
+      SILAHKAN ISI FORMULIR PENGAJUAN MAGANG
     </h2>
 
     @if ($errors->any())

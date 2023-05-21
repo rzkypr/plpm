@@ -14,6 +14,12 @@
     </nav>
     <div class="flex justify-center flex-1">
       <a class="inline-flex items-center text-sm mr-5 font-semibold transition-colors duration-150 "
+        href="/">
+
+        <span class="ml-4">P L P M</span>
+      </a>
+
+      <a class="inline-flex items-center text-sm mr-5 font-semibold transition-colors duration-150 "
         href="{{ url('user')}}">
 
         <span class="ml-4">FORMULIR PENGAJUAN</span>
@@ -27,7 +33,7 @@
       {{-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
         <button @click="open = !open"
           class="inline-flex items-center  text-sm mr-5 font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100">
-          <span>Pengaduan</span>
+          <span>Pengajuan</span>
           <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
             class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
             <path fill-rule="evenodd"

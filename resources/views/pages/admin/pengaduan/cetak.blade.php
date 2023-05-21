@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laporan</title>
+  <title>PLPM | Laporan Pengajuan Magang</title>
   <style>
     img{
       height: 100px;;
@@ -19,13 +19,13 @@
 <body>
   <div class="container">
     <div class="title text-center mb-5">
-      <h2>PLPM | Portal Layanan Pengajuan PL/PKL/Magang Diskominfo Kabupaten Bandung</h2>
+      <h2>PLPM | Portal Layanan Pengajuan Magang Diskominfo Kabupaten Bandung</h2>
       <h5><a href="http://rcreatived.rf.gd/" target="_blank">Oleh Rizky Purnama Ramadhan</a></h5>
     </div>
     <hr class="solid">
 
     <div>
-      <h6>Laporan Pengajuan</h6>
+      <h6>Laporan Pengajuan Magang</h6>
       <h6>{{ $pengaduan->created_at->format('l, d F Y') }}</h6>
     </div>
     <hr class="solid">

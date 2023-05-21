@@ -1,4 +1,6 @@
-# Portal Layanan Pengajuan Magang Diskominfo Kabupaten Bandung
+# P L P M
+
+## Portal Layanan Pengajuan Magang Diskominfo Kabupaten Bandung
 
 (Cloned from [rzkypr/plpm](https://github.com/rzkypr/plpm.git) with some modifications based on my requirement, please refer there for official update and the newest change)
 

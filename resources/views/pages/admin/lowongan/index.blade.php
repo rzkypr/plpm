@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-Data Lowongan Magang
+PLPM | Data Lowongan Magang
 @endsection
 
 @section('content')

@@ -1,14 +1,14 @@
 @extends('layouts.admin')
 
 @section('title')
-Dashboard
+PLPM | Diskominfo Kabupaten Bandung
 @endsection
 
 @section('content')
 <main class="h-full overflow-y-auto">
   <div class="container px-6 mx-auto grid">
     <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-      DASHBOARD
+      PORTAL LAYANAN PENGAJUAN MAGANG DISKOMINFO KABUPATEN BANDUNG
     </h2>
 
     <!-- Cards -->
@@ -24,7 +24,7 @@ Dashboard
         </div>
         <div>
           <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-            Jumlah Pengajuan
+            Jumlah Pengajuan Magang
           </p>
           <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
             {{ $pengaduan }}
@@ -151,7 +151,7 @@ Dashboard
         </div>
         <div>
           <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-          Jumlah Tanggapan
+          Jumlah Tanggapan Magang
           </p>
           <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
           {{ $tanggapan }}

@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-Data User
+PLPM | Data User
 @endsection
 
 @section('content')

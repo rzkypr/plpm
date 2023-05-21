@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Bulan Mei 2023 pada 17.45
+-- Waktu pembuatan: 21 Bulan Mei 2023 pada 11.45
 -- Versi server: 10.4.8-MariaDB
 -- Versi PHP: 7.3.10
 
@@ -60,11 +60,11 @@ CREATE TABLE `lowongans` (
 --
 
 INSERT INTO `lowongans` (`id`, `id_lowongan`, `nama`, `dinas`, `waktu`, `keterangan`, `created_at`, `updated_at`) VALUES
-(1, 'L001', 'Web Developer', 'Diskominfo', '3 Bulan', 'Aktif', '2023-05-10 17:00:00', '2023-05-10 17:00:00'),
-(2, 'L002', 'Akuntansi', 'Disdik', '6 Bulan', 'Aktif', '2023-05-10 17:00:00', '2023-05-10 17:00:00'),
-(3, 'L003', 'Apoteker', 'Dinkes', '2 Bulan', 'Aktif', '2023-05-10 17:00:00', '2023-05-10 17:00:00'),
-(4, 'L004', 'IT Support', 'Disdukcapil', '3 Bulan', 'Aktif', '2023-05-10 17:00:00', '2023-05-10 17:00:00'),
-(5, 'L005', 'Staff Admin', 'Dispora', '4 Bulan', 'Aktif', '2023-05-10 17:00:00', '2023-05-10 17:00:00');
+(1, 'L001', 'Web Developer', 'Dinas Komunikasi Informatika dan Statistika', '3 Bulan', 'Aktif', '2023-05-10 17:00:00', '2023-05-10 17:00:00'),
+(2, 'L002', 'Akuntansi', 'Dinas Pendidikan', '6 Bulan', 'Aktif', '2023-05-10 17:00:00', '2023-05-10 17:00:00'),
+(3, 'L003', 'Apoteker', 'Dinas Kesehatan', '2 Bulan', 'Aktif', '2023-05-10 17:00:00', '2023-05-10 17:00:00'),
+(4, 'L004', 'IT Support', 'Dinas Kependudukan dan Pencatatan Sipil', '3 Bulan', 'Aktif', '2023-05-10 17:00:00', '2023-05-10 17:00:00'),
+(5, 'L005', 'Staff Admin', 'Dinas Pemuda dan Olahraga', '4 Bulan', 'Aktif', '2023-05-10 17:00:00', '2023-05-10 17:00:00');
 
 -- --------------------------------------------------------
 

@@ -1,14 +1,14 @@
 @extends('layouts.admin')
 
 @section('title')
-Tambah Data Lowongan
+PLPM | Tambah Data Lowongan Magang
 @endsection
 
 @section('content')
 <main class="h-full pb-16 overflow-y-auto">
   <div class="container px-6 mx-auto grid">
     <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-      TAMBAH DATA LOWONGAN
+      TAMBAH DATA LOWONGAN MAGANG
     </h2>
 
     <form action="{{ route('lowongan.store')}} " method="POST" enctype="multipart/form-data">

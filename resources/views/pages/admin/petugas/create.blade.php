@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('title')
-Tambah Data Petugas
+PLPM | Tambah Data Petugas
 @endsection
 
 @section('content')

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surat Pengajuan</title>
+  <title>PLPM | Surat Pengajuan Magang</title>
   <style>
     img{
       height: 100px;;
@@ -19,13 +19,13 @@
 <body>
   <div class="container">
     <div class="title text-center mb-5">
-      <h2>PLPM | Portal Layanan Pengajuan PL/PKL/Magang Diskominfo Kabupaten Bandung</h2>
-      <h5><a href="http://rcreatived.rf.gd/" target="_blank">Oleh Rizky Purnama Ramadhan</a></h5>
+      <h2>PLPM | Portal Layanan Pengajuan Magang Diskominfo Kabupaten Bandung</h2>
+      <h5><a href="http://rizkypurnamaramadhan.rf.gd/" target="_blank">Oleh Rizky Purnama Ramadhan</a></h5>
     </div>
     <hr class="solid">
 
     <div>
-      <h6>Surat Pengajuan</h6>
+      <h6>Surat Pengajuan Magang</h6>
       <h6>{{ $pengaduan->created_at->format('l, d F Y') }}</h6>
     </div>
     <hr class="solid">
